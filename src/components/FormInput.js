@@ -44,7 +44,7 @@ function FormInput() {
       </div>
 
       
-      <select className="form-select mb-3" aria-label="Default select example"  defaultValue={'DEFAULT'} {...register("programOfInterest", { required: true })}>
+      <select className="form-select mb-3" aria-label="Default select example"  defaultValue={'DEFAULT'} {...register("programOfInterest", { required: true, validate: (value) => value !== "DEFAULT" })}>
         <option value='DEFAULT' disabled>Select a Program of Interest</option>
         <option value="Automotive Technology">Automotive Technology</option>
         <option value="Autobody Paint Technology">Autobody Paint Technology</option>
@@ -58,6 +58,7 @@ function FormInput() {
         <option value="Wastewater Treatment Plant Technology">Wastewater Treatment Plant Technology</option>
         <option value="Welding Technology">Welding Technology</option>
       </select>
+      {errors.programOfInterest && <p>Please Select a Program of Interest</p>}
 
       <div className="form-floating mb-3">
         <textarea className="form-control" placeholder="Leave a comment here" id="floatingTextarea2" style={{height: '100px'}} {...register("additionalInfo", {})}></textarea>
