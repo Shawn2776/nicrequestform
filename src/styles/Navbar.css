@@ -1,12 +1,65 @@
-.navbar {
-  display: flex;
-  flex-flow: row;
-  height: 56px;
-  background-color: #242526;
-  font-weight: bold;
-  text-transform: uppercase;
-  position: sticky;
-  top: 0;
-  z-index: 999;
-  transition: 0.6s;
+@media screen and (min-width: 1320px) {
+  .container {
+    width: 1260px;
+    position: relative;
+    margin: 0 auto;
+    height: 96px;
+    /* padding: 40px 0; */
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    
+    /* border: 1px solid blue; */
+  }
+
+  .container a {
+    color: white;
+    text-decoration: none;
+    margin: 0 20px;
+    padding: 13.5px 27px;
+  }
+
+  .logo {
+    display: flex;
+    flex-flow: row;
+    align-items: center;
+    height: 4em;
+    padding: 16px 10px;
+  }
+
+  .logo img {
+    height: 54px;
+  }
+
+  .logo a {
+    height: 96px;
+    margin-top: 40px;
+  }
+
+  .logo__img {
+    align-items: center;
+  }
+
+  .menu {
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    text-align: center;
+    margin: 0 10px;
+    /* border: 1px solid yellow; */
+  }
+
+
+}
+
+@media screen and (max-width: 1024px) {
+  .container {
+    width: 960px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .container {
+    width: 720px;
+  }
 }

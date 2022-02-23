@@ -1,5 +1,7 @@
 .app {
-  background-color: #242526;
+  background-color: #000;
   min-height: 100vh;
-  color: antiquewhite;
+  color: #fff;
+  font-size: 18px;
+  font-family: 'Sanchez', serif;
 }

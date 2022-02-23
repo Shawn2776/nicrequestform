@@ -1,0 +1,21 @@
+.alert__body {
+  background-color: #FFB500;
+  color: #000;
+  font-weight: bold;
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  justify-content: center;
+  height: 86px;
+}
+
+.corona__links a {
+  color: #000;
+  font-weight: normal;
+  font-style: italic;
+}
+
+h4 {
+  text-align: center;
+  font-weight: 600;
+}
