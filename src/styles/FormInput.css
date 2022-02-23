@@ -1,0 +1,22 @@
+.form__input {
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 160px;
+  max-width: 600px;
+  background-color: #242526;
+  color: black;
+  padding: 0 10px;
+  
+}
+
+p {
+  color: #bf1650;
+}
+
+p::before {
+  display: inline;
+  content: "⚠ ";
+}

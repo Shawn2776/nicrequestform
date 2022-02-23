@@ -1,0 +1,12 @@
+.navbar {
+  display: flex;
+  flex-flow: row;
+  height: 56px;
+  background-color: #242526;
+  font-weight: bold;
+  text-transform: uppercase;
+  position: sticky;
+  top: 0;
+  z-index: 999;
+  transition: 0.6s;
+}
