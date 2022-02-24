@@ -1,4 +1,4 @@
-import React from 'react'
+import React from 'react';
 
 function Home() {
   return (
@@ -23,6 +23,4 @@ function Home() {
   )
 }
 
-export default Home
-
-{/* <img src="_img/ProtecttheNest.png" alt="#Protect the Nest, Thank you, Cardinals, for doing your part."> */}
+export default Home;

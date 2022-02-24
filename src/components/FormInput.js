@@ -1,6 +1,8 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { useForm } from 'react-hook-form';
 import '../styles/FormInput.css';
+import { send } from 'emailjs-com';
+// require('dotenv').config();
 
 function FormInput() {
   const { register, handleSubmit, formState: { errors } } = useForm({
@@ -13,11 +15,36 @@ function FormInput() {
     },
     criteriaMode: 'all'
   });
-  const onSubmit = data => console.log(data);
-  console.log(errors);
+
+  const onSubmit = (data, e) => {
+    e.preventDefault();
+    send(
+      'service_fytul5q',
+      'template_dds27wv',
+      data,
+      'user_db6mnaU9ev5ZplbNf7HSw'
+    )
+      .then((response) => {
+        alert('SUCCESS!', response.status, response.text);
+      })
+      .catch((err) => {
+        console.log('FAILED...', err);
+      });
+  };
+  
+  
 
   return (
+    <div className='form__landing'>
+      <div>
+        <h4>Prospect Inquiry</h4>
+      </div>
+
     <form className='form__input' onSubmit={handleSubmit(onSubmit)}>
+
+      <div>
+        Contact Information
+      </div>
 
       <div className="form-floating mb-3">
         <input type="text" className="form-control" id="floatingInput" placeholder="First Name" {...register("firstName", {required: true, maxLength: 80, validate: (value) => value !== ""})}/>
@@ -68,6 +95,7 @@ function FormInput() {
       <input type="submit" className="btn btn-primary mb-3"/>
 
     </form>
+    </div>
   )
 }
 
