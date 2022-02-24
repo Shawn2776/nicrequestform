@@ -2,10 +2,11 @@ import React, { useEffect } from 'react';
 import { useForm } from 'react-hook-form';
 import '../styles/FormInput.css';
 import { send } from 'emailjs-com';
+import { useNavigate } from 'react-router-dom';
 // require('dotenv').config();
 
 function FormInput() {
-  const { register, handleSubmit, formState: { errors } } = useForm({
+  const { register, handleSubmit, reset, formState: { errors } } = useForm({
     defaultValues: {
       firstName: '',
       lastName: '',
@@ -26,24 +27,27 @@ function FormInput() {
     )
       .then((response) => {
         alert('SUCCESS!', response.status, response.text);
+        reset();
+        navigate('/');
+        
       })
       .catch((err) => {
         console.log('FAILED...', err);
       });
   };
-  
-  
+
+  let navigate = useNavigate();
 
   return (
     <div className='form__landing'>
-      <div>
-        <h4>Prospect Inquiry</h4>
+      <div className='prospect'>
+        <h1>Prospect Inquiry</h1>
       </div>
 
     <form className='form__input' onSubmit={handleSubmit(onSubmit)}>
 
-      <div>
-        Contact Information
+      <div className='contact'>
+        <h3>Contact Information</h3>
       </div>
 
       <div className="form-floating mb-3">
