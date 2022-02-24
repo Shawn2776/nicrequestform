@@ -6,6 +6,7 @@
   align-items: center;
   height: 100vh;
   color: #000;
+  border-top: 5px solid #781126;
 }
 
 .form__input {
@@ -41,4 +42,14 @@ p::before {
 
 .contact {
   margin-bottom: 30px;
+}
+
+.btn {
+  width: 100%;
+  background-color: #333;
+  border-color: #333;
+}
+
+.btn:hover {
+  background-color: #000;
 }
