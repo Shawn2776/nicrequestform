@@ -5,10 +5,10 @@ function Home() {
     <div id="carouselExampleControls" className="carousel slide" data-bs-ride="carousel" data-bs-interval="8000">
   <div className="carousel-inner">
     <div className="carousel-item active">
-      <img src="./ProtecttheNest.png" className="d-block w-100" alt="..." />
+      <img src="./ProtecttheNest.png" className="d-block w-100" alt="#Protect the Nest, Cardinals, for doing your part" />
     </div>
     <div className="carousel-item">
-      <img src="./artDepartment.png" className="d-block w-100" alt="..." />
+      <img src="./artDepartment.png" className="d-block w-100" alt="Art department presents, Art Faculty Exhibition 2022, Feb 8 Mar 25" />
     </div>
   </div>
   <button className="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
