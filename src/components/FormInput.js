@@ -26,7 +26,7 @@ function FormInput() {
       'user_db6mnaU9ev5ZplbNf7HSw'
     )
       .then((response) => {
-        alert('SUCCESS!', response.status, response.text);
+        alert('SUCCESS! Thank You for contacting us! You will be redirected to the Home Page when you close this notification.', response.status, response.text);
         reset();
         navigate('/');
         
