@@ -6,6 +6,11 @@
   color: #FFF !important;
 }
 
+.navbar .nav-item a:hover {
+  background-image: linear-gradient(135deg, #222222 25%, #676767 25%, #676767 50%, #222222  50%, #222222 75%, #676767 75%, #676767 100%) !important;
+background-size: 5.66px 5.66px;
+}
+
 .logo__img {
   height: 54px;
   margin-left: 40px;
@@ -13,4 +18,13 @@
 
 .hidden {
   display: none;
+}
+
+.home img:hover {
+  background-image: none;
+}
+
+.logo__img {
+  background-color: none;
+  background-image: none;
 }

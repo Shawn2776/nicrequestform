@@ -1,0 +1,11 @@
+.wireframe {
+  display: flex;
+  flex-flow: row;
+  justify-content: center;
+  width: 100%;
+}
+
+.wireframe img {
+  max-width: 960px;
+  margin-top: 40px;
+}

@@ -7,7 +7,7 @@ function Navbar() {
     <nav className="navbar navbar-expand-lg navbar-dark bg-dark">
       <div className="container-fluid">
         
-        <Link className="navbar-brand" to='/'>
+        <Link className="navbar-brand home" to='/'>
           <img className="logo__img" src='./logoReverse.svg' alt='logo'/>
           <span className="hidden">North Idaho College</span>
         </Link>
