@@ -9,3 +9,16 @@
   max-width: 960px;
   margin-top: 40px;
 }
+
+@media only screen and (max-width: 768px) {
+  .wireframe {
+    display: flex;
+  flex-flow: row;
+  justify-content: center;
+  width: 100%;
+  }
+
+  .wireframe img {
+    width: 380px;
+  }
+}
