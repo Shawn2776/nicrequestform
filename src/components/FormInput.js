@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react';
+import React from 'react';
 import { useForm } from 'react-hook-form';
 import '../styles/FormInput.css';
 import { send } from 'emailjs-com';
@@ -104,33 +104,3 @@ function FormInput() {
 }
 
 export default FormInput;
-
-/*
-
-<form className='form__input' onSubmit={handleSubmit(onSubmit)}>
-      <input type="text" placeholder="First Name" {...register("First Name", {required: true, maxLength: 80})} />
-      <input type="text" placeholder="Last Name" {...register("Last Name", {required: true, maxLength: 100})} />
-      <input type="tel" placeholder="Mobile Number" {...register("Mobile Number", {required: true, minLength: 6, maxLength: 12})} />
-      <input type="text" placeholder="Email" {...register("Email", {required: true, pattern: /^\S+@\S+$/i})} />
-      <select {...register("Program of Interest", { required: true })}>
-        <option value="" disabled selected>Select your Program of Interest</option>
-        <option value="Automotive Technology">Automotive Technology</option>
-        <option value="Autobody Paint Technology">Autobody Paint Technology</option>
-        <option value="Carpentry and Construction Technology">Carpentry and Construction Technology</option>
-        <option value="Diesel Technology">Diesel Technology</option>
-        <option value="Heating, Ventilation, Air Conditioning, and Refrigeration">Heating, Ventilation, Air Conditioning, and Refrigeration</option>
-        <option value="Industrial Mechanic/Millwright">Industrial Mechanic/Millwright</option>
-        <option value="Machining and CNC Technology">Machining and CNC Technology</option>
-        <option value="Mechanical Design Engineering Technology">Mechanical Design Engineering Technology</option>
-        <option value="Mechatronics">Mechatronics</option>
-        <option value="Wastewater Treatment Plant Technology">Wastewater Treatment Plant Technology</option>
-        <option value="Welding Technology">Welding Technology</option>
-      </select>
-      <textarea {...register("Additional Information", {})} />
-
-      <input type="submit" />
-    </form>
-
-
-
-*/
